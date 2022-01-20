@@ -1,4 +1,4 @@
-const IP = "https://82.165.32.7/"
+const IP = "https://299a217.online-server.cloud/"
 
 setUsers()
 setVotes()
