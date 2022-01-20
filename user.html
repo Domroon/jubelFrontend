@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./user.js"></script>
+  </head>
+  <body>
+    <nav class="standard" id="navbar">
+      <!-- <button>SuperUser</button> -->
+      <button id="logout">Logout</button>
+    </nav>
+    <header class="standard">
+      <h1 id="user-name">Hallo!</h1>
+    </header>
+    <section class="invitation standard">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quaerat assumenda
+        molestiae quo corporis. Possimus nam quae consectetur dicta earum aspernatur deleniti porro
+        delectus, quos odit quod impedit nostrum quasi exercitationem vero velit obcaecati ipsa
+        molestiae veritatis error. Iure odit aperiam vel est dolore voluptatem ipsam numquam vero.
+        Voluptatem aut, fuga cumque est modi pariatur ipsam deleniti eveniet aliquid? Deserunt est
+        sapiente perferendis incidunt maiores? Deleniti, dolore qui at, ut velit quas illum
+        aspernatur eius earum voluptatibus magnam quam sunt beatae neque fuga modi, ad nam? Mollitia
+        harum recusandae, tempore molestias fuga consequatur quibusdam eveniet eligendi vero minus
+        voluptates quia.
+      </p>
+    </section>
+    <section class="standard">
+      <div id="user-info">
+        <h2 class="description">Status:</h2>
+        <span id="status" class="value"></span>
+        <span id="change-placeholder">
+          <select name="select-status" id="select-status">
+            <option value="yes">Ja</option>
+            <option value="no">Nein</option>
+            <!-- <option value="unknown">Vielleicht</option> -->
+          </select>
+        </span>
+        <button id="change-btn">Ändern</button>
+      </div>
+      <div>
+        <h2 class="description">Wählbare Songs:</h2>
+        <span id="possible-votes" class="value"></span>
+      </div>
+    </section>
+    <section class="standard song-list" id="song-list">
+      <button id="vote-btn">Wählen</button>
+      <span id="vote-message"></span>
+      <div class="grid song-description">
+        <div class="description-filler"></div>
+        <div class="song-id fat">
+          <p>Nummer</p>
+        </div>
+        <div class="title fat"><p>Titel</p></div>
+        <div class="interpret fat"><p>Interpreter</p></div>
+      </div>
+    </section>
+  </body>
+</html>

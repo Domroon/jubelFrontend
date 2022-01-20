@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jubeltach Login</title>
+
+    <script defer src="./login.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="standard">
+      <h1>Jubeltach - Andreas 60. Geburtstag</h1>
+    </header>
+    <section class="login standard">
+      <div class="login-fields">
+        <h2>Login</h2>
+        <form class="form" id="login-form">
+          <div class="input-field">
+            <label for="lbl_username">Benutzername</label>
+            <input type="text" name="username" id="username" required />
+          </div>
+          <div class="input-field">
+            <label for="lbl_password">Passwort</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <div class="input-field">
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="standard">
+      <div class="messages">
+        <p id="login-messages"></p>
+      </div>
+    </section>
+    <!-- <footer><div class="standard bottom"></div></footer> -->
+  </body>
+</html>

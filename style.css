@@ -1,0 +1,152 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.standard {
+  padding: 10px;
+  margin: 20px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: black 1px solid;
+}
+
+.login-fields {
+  margin: auto;
+  padding: 0px;
+  width: 200px;
+}
+
+.messages {
+  height: 50px;
+  text-align: center;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+button {
+  width: 175px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.bottom {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100px;
+}
+
+.description {
+  display: inline-block;
+}
+
+.value {
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+.song-description .fat {
+  font-weight: 800;
+}
+
+.song-description {
+  background-color: rgb(102, 101, 101);
+  border-radius: 10px;
+  border: black 1px solid;
+}
+
+.song-description p {
+  margin: 10px;
+}
+
+.song {
+  border-radius: 10px;
+  border: black 1px solid;
+}
+
+.even {
+  background: rgb(177, 176, 176);
+}
+
+.odd {
+  background: rgb(149, 149, 149);
+}
+
+.song p {
+  margin: 10px;
+}
+
+.voted {
+  background: green;
+}
+
+#vote-btn {
+  margin: 20px;
+  background: lightblue;
+}
+
+.checkbox {
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.description-filler {
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  visibility: collapse;
+}
+
+.unvisible {
+  visibility: collapse;
+}
+
+.vote {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  background: lightblue;
+}
+
+.vote .fat {
+  font-weight: 800;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr;
+  background: yellow;
+}
+
+.user .fat {
+  font-weight: 800;
+}
+
+.accept {
+  background: green;
+}
+
+.not-accept {
+  background: red;
+}
+
+.grey {
+  background: grey;
+}
