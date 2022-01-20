@@ -34,7 +34,7 @@ const getUser = () => {
     })
     .then((current_user) => {
       if (!(current_user.detail === undefined)) {
-        changeSite("./login.html")
+        changeSite("./index.html")
       } else {
         possibleVotes.textContent = 45 - current_user.vote_qty
         setUser(current_user)
@@ -42,7 +42,7 @@ const getUser = () => {
     })
     .catch((error) => {
       console.log(error)
-      changeSite("./login.html")
+      changeSite("./index.html")
     })
 }
 
@@ -70,7 +70,7 @@ const getSongs = ({ checkboxIsOn }) => {
     })
     .catch((error) => {
       console.error(error)
-      window.location = "./login.html"
+      window.location = "./index.html"
     })
 }
 
@@ -147,7 +147,7 @@ const sendStatus = () => {
     .then((res) => res.json())
     .catch((error) => {
       console.error(error)
-      window.location = "./login"
+      window.location = "./index"
     })
   // .then((res) => console.log(res[0].body))
 
@@ -258,7 +258,7 @@ const postRequest = (urlString, pathParam) => {
     .then(() => console.log(response))
     .catch((error) => {
       console.error(error)
-      window.location = "./login"
+      window.location = "./index"
     })
 }
 
@@ -332,7 +332,7 @@ voteBtn.addEventListener("click", (e) => {
 logoutBtn.addEventListener("click", (e) => {
   e.preventDefault()
   localStorage.clear()
-  window.location = "./login.html"
+  window.location = "./index.html"
 })
 
 // Main

@@ -26,7 +26,7 @@ async function setVotes() {
   const voteList = document.getElementById("vote-list")
   const votes = await getData(IP + "votes").catch((error) => {
     console.error(error, "Cant fetch Votes")
-    window.location = "./login.html"
+    window.location = "./index.html"
   })
   if (votes) {
     votes.forEach((vote) => {
@@ -62,7 +62,7 @@ async function setUsers() {
   const userList = document.getElementById("user-list")
   const users = await getData(IP + "users").catch((error) => {
     console.error(error, "Cant fetch User")
-    window.location = "./login.html"
+    window.location = "./index.html"
   })
   if (users) {
     users.forEach((user) => {
