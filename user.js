@@ -11,7 +11,7 @@ const songList = document.getElementById("song-list")
 const voteBtn = document.getElementById("vote-btn")
 const voteMessage = document.getElementById("vote-message")
 const logoutBtn = document.getElementById("logout")
-const IP = "http://82.165.32.7/"
+const IP = "https://82.165.32.7/"
 
 // functions
 

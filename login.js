@@ -7,7 +7,7 @@ const fetchError = "Es konnte nicht mit dem Server verbunden werden"
 const loginWait = "Sie werden eingeloggt"
 const wrongInput = "Falsches Password oder Name"
 const welcome = "Bitte einloggen"
-const IP = "http://82.165.32.7/"
+const IP = "https://82.165.32.7/"
 
 // Functions
 
