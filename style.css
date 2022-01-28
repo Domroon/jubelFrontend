@@ -60,6 +60,14 @@ footer {
   grid-template-rows: 1fr;
 }
 
+@media screen and (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 5fr 4fr;
+    grid-template-rows: 1fr;
+  }
+}
+
 .song-description .fat {
   font-weight: 800;
 }
@@ -124,6 +132,15 @@ footer {
   background: lightblue;
 }
 
+@media screen and (max-width: 500px) {
+  .vote {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1.5fr;
+    grid-template-rows: 1fr;
+    background: lightblue;
+  }
+}
+
 .vote .fat {
   font-weight: 800;
 }
@@ -133,6 +150,15 @@ footer {
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr;
   background: yellow;
+}
+
+@media screen and (max-width: 500px) {
+  .user {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    background: yellow;
+  }
 }
 
 .user .fat {
