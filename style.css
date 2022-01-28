@@ -1,5 +1,18 @@
 body {
   font-family: "Roboto", sans-serif;
+  background: grey;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  color: #444;
+}
+
+.icon {
+  font-size: 10rem;
 }
 
 .standard {
@@ -60,7 +73,7 @@ footer {
   grid-template-rows: 1fr;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: 0.1fr 1fr 5fr 4fr;
@@ -99,6 +112,10 @@ footer {
   margin: 10px;
 }
 
+#select-status {
+  display: block;
+}
+
 .voted {
   background: green;
 }
@@ -106,6 +123,11 @@ footer {
 #vote-btn {
   margin: 20px;
   background: lightblue;
+}
+
+#vote-message {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .checkbox {
@@ -132,7 +154,7 @@ footer {
   background: lightblue;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .vote {
     display: grid;
     grid-template-columns: 0.5fr 3fr 1.5fr;
@@ -152,7 +174,7 @@ footer {
   background: yellow;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .user {
     display: grid;
     grid-template-columns: 2fr 3fr 1fr;
