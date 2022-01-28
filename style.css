@@ -1,5 +1,18 @@
 body {
   font-family: "Roboto", sans-serif;
+  background: grey;
+}
+
+header {
+  text-align: center;
+}
+
+header h2 {
+  color: #444;
+}
+
+.icon {
+  font-size: 10rem;
 }
 
 .standard {
@@ -32,17 +45,22 @@ button {
 }
 
 footer {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   width: 100%;
-  margin: 0;
+  margin: 0; */
 }
 
 .bottom {
   margin: 0;
   margin-left: 20px;
   margin-right: 20px;
-  height: 100px;
+  /* height: 100px; */
+  text-align: center;
+}
+
+.index-bottom {
+  margin-top: 10rem;
 }
 
 .description {
@@ -58,6 +76,14 @@ footer {
   display: grid;
   grid-template-columns: 0.1fr 2fr 2fr 2fr;
   grid-template-rows: 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 5fr 4fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .song-description .fat {
@@ -91,6 +117,10 @@ footer {
   margin: 10px;
 }
 
+#select-status {
+  display: block;
+}
+
 .voted {
   background: green;
 }
@@ -98,6 +128,11 @@ footer {
 #vote-btn {
   margin: 20px;
   background: lightblue;
+}
+
+#vote-message {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .checkbox {
@@ -124,6 +159,15 @@ footer {
   background: lightblue;
 }
 
+@media screen and (max-width: 768px) {
+  .vote {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1.5fr;
+    grid-template-rows: 1fr;
+    background: lightblue;
+  }
+}
+
 .vote .fat {
   font-weight: 800;
 }
@@ -133,6 +177,15 @@ footer {
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 1fr;
   background: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .user {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    background: yellow;
+  }
 }
 
 .user .fat {
@@ -149,4 +202,20 @@ footer {
 
 .grey {
   background: grey;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+}
+
+.link:hover {
+  color: #444;
+  font-size: 1.5rem;
 }

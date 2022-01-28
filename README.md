@@ -1,11 +1,2 @@
-- Login-Page
-
-- User Page
-
-  - Set Invitation Status
-  - Vote Song
-
-- Superuser Page
-
-  - Show List with Songs order by votes
-  - show list with invitation status of users
+A simple Web Application for Birthdays.
+Superusers can see the invitation status and the voted songs.
