@@ -293,6 +293,22 @@ footer {
   margin: 2rem;
 }
 
+.data-menu {
+  text-align: left;
+  background: var(--grey-1);
+  box-shadow: 5px 5px 10px black;
+  margin: 2rem;
+}
+
+.data-menu p {
+  font-size: 1.2rem;
+}
+
+.data-menu span {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
 .food-menu {
   text-align: left;
   background: var(--grey-1);
@@ -312,10 +328,16 @@ footer {
   font-size: 1.2rem;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1600px) {
   .menues {
     display: flex;
     justify-content: space-around;
+    min-width: 700px;
+    flex-shrink: 0;
+  }
+
+  .data-menu {
+    min-width: 350px;
   }
 
   .food-menu {
