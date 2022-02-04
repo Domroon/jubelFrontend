@@ -1,24 +1,59 @@
+:root {
+  --grey-1: rgb(197, 194, 194);
+
+  --clr-primary-dark: rgb(19, 107, 19);
+  --clr-primary: rgba(68, 165, 68, 1);
+  --clr-primary-light: rgb(99, 163, 99);
+  --clr-primary-lighter: rgb(125, 180, 125);
+  --clr-secondary: rgb(187, 120, 14);
+
+  --transition: all 2s ease-in-out;
+}
+
+/* GLOBAL STYLES */
+
 body {
   font-family: "Roboto", sans-serif;
-  background: grey;
+  background: var(--clr-primary-light);
 }
 
 header {
   text-align: center;
 }
 
-header h2 {
-  color: #444;
+h1 {
+  color: var(--clr-primary-dark);
+}
+
+h2 {
+  color: var(--clr-secondary);
+}
+
+button {
+  background: var(--clr-primary-dark);
+  color: white;
+  text-transform: uppercase;
 }
 
 .icon {
   font-size: 10rem;
 }
 
+@media screen and (min-width: 992px) {
+  .cake-icon {
+    font-size: 15rem;
+    margin: 5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 .standard {
   padding: 10px;
   margin: 20px;
-  background-color: lightgrey;
+  background-color: var(--clr-primary-lighter);
   border-radius: 10px;
   border: black 1px solid;
 }
@@ -91,7 +126,7 @@ footer {
 }
 
 .song-description {
-  background-color: rgb(102, 101, 101);
+  background: var(--clr-primary-dark);
   border-radius: 10px;
   border: black 1px solid;
 }
@@ -110,7 +145,7 @@ footer {
 }
 
 .odd {
-  background: rgb(149, 149, 149);
+  background: rgb(67, 124, 62);
 }
 
 .song p {
@@ -127,7 +162,7 @@ footer {
 
 #vote-btn {
   margin: 20px;
-  background: lightblue;
+  /* background: lightblue; */
 }
 
 #vote-message {
@@ -218,4 +253,76 @@ footer {
 .link:hover {
   color: #444;
   font-size: 1.5rem;
+}
+
+/* INVITATION */
+.invitation-wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.invitation-text {
+  font-size: 1.2rem;
+  margin: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  background: var(--grey-1);
+  box-shadow: 5px 5px 10px black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.invitation-wrapper p {
+  color: rgb(22, 22, 22);
+}
+
+.invitation-menu {
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.music-menu {
+  text-align: left;
+  background: var(--grey-1);
+  box-shadow: 5px 5px 10px black;
+  margin: 2rem;
+}
+
+.food-menu {
+  text-align: left;
+  background: var(--grey-1);
+  box-shadow: 5px 5px 10px black;
+  margin: 2rem;
+}
+
+.food-menu p {
+  font-size: 1.2rem;
+}
+
+.food-menu span {
+  text-decoration: underline;
+}
+
+.music-menu p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .menues {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .food-menu {
+    min-width: 350px;
+  }
+
+  .music-menu {
+    min-width: 350px;
+  }
 }
