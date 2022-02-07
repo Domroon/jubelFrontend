@@ -236,7 +236,7 @@ async function getData(url) {
 
 async function addSuperuserBtn() {
   const currentUser = await getData(IP + "users/current")
-  if ((currentUser.name == "Domroon") | (currentUser.name == "Andreas")) {
+  if ((currentUser.login_name == "Piano") | (currentUser.login_name == "Andreas")) {
     const superuserBtn = document.createElement("button")
     superuserBtn.classList.add("superuserBtn")
     superuserBtn.id = "superuserBtn"
@@ -253,7 +253,7 @@ async function addUserDatas() {
   const userHeader = document.getElementById("user-name")
   const userStatus = document.getElementById("status")
   const possibleVotes = document.getElementById("possible-votes")
-  userHeader.textContent = "Hallo " + currentUser.name + "!"
+  userHeader.textContent = "Hallo " + currentUser.login_name + "!"
 
   const status = currentUser.accept_invitation
   if (status === true) {
