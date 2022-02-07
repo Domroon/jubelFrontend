@@ -253,7 +253,7 @@ async function addUserDatas() {
   const userHeader = document.getElementById("user-name")
   const userStatus = document.getElementById("status")
   const possibleVotes = document.getElementById("possible-votes")
-  userHeader.textContent = "Hallo " + currentUser.login_name + "!"
+  userHeader.textContent = "Hallo " + currentUser.user_name + "!"
 
   const status = currentUser.accept_invitation
   if (status === true) {
