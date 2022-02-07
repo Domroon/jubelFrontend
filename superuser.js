@@ -80,7 +80,7 @@ function setUser({ user, userDOM }) {
   //   console.log(user.name, user.accept_invitation, user.vote_qty)
   const nameDOM = document.createElement("div")
   nameDOM.classList.add("name")
-  nameDOM.textContent = user.name
+  nameDOM.textContent = user.login_name
   userDOM.appendChild(nameDOM)
 
   const statusDOM = document.createElement("div")
